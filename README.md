@@ -2,7 +2,7 @@
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
-|1|[Two Sum](https://oj.leetcode.com/problems/two-sum/)| [Python](./Algorithms/two_sum.py)|Easy|
+|1|[Two Sum](https://oj.leetcode.com/problems/two-sum/)| [Python](./Solutions/two_sum.py)|Easy|
 
 ## Reference
 
