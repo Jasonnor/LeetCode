@@ -14,12 +14,17 @@
 # The median is (2 + 3)/2 = 2.5
 
 class Solution(object):
-    def findMedianSortedArrays(self, A, B):
-        length = len(A) + len(B)
+    def findMedianSortedArrays(self, nums1, nums2):
+        """
+        :type nums1: List[int]
+        :type nums2: List[int]
+        :rtype: float
+        """
+        length = len(nums1) + len(nums2)
         if length % 2 == 1:
-            return self.find_kth(A, B, length // 2)
+            return self.find_kth(nums1, nums2, length // 2)
         else:
-            return (self.find_kth(A, B, length // 2) + self.find_kth(A, B, length // 2 - 1)) / 2.   
+            return (self.find_kth(nums1, nums2, length // 2) + self.find_kth(nums1, nums2, length // 2 - 1)) / 2.   
         
     def find_kth(self, a, b, k):
         if not a:
